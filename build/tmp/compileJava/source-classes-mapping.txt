@@ -1,9 +1,9 @@
 demo/MessageEntity.java
  demo.MessageEntity
-demo/Application.java
- demo.Application
 demo/MessageService.java
  demo.MessageService
+demo/Application.java
+ demo.Application
 demo/MessageBoundaryController.java
  demo.MessageBoundaryController
 demo/AuthorDao.java

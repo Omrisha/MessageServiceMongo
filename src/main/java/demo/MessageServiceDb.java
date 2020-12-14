@@ -33,7 +33,7 @@ public class MessageServiceDb implements MessageService {
 	@Override
 	public List<MessageBoundary> getAll(int size, int page) {
 		return this.messageDao
-			.findAll(PageRequest.of(page, size, Direction.DESC, "message", "id"))
+			.findAll(PageRequest.of(page, size, Direction.ASC, "id"))
 			.getContent()
 			.stream()
 			.map(MessageBoundary::new)
@@ -52,7 +52,7 @@ public class MessageServiceDb implements MessageService {
 	@Override
 	public List<AuthorBoundary> getAllAuthors(int size, int page) {
 		return this.authorDao
-			.findAll(PageRequest.of(page, size, Direction.ASC, "name", "email", "id"))
+			.findAll(PageRequest.of(page, size, Direction.ASC, "id"))
 			.stream()
 			.map(AuthorBoundary::new)
 			.collect(Collectors.toList());

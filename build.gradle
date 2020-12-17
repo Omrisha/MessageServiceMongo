@@ -30,12 +30,17 @@ test {
 }
 
 azureWebApp {
-    resourceGroup = 'com.example'
-    appName = 'messagesServiceMongo'
+    resourceGroup = 'omris'
+    appName = 'messages-mongo'
+    pricingTier = 'Free'
+    region = 'Australia Central'
     appService = {
         type = 'windows'
         javaWebContainer = 'tomcat 8.5'
         javaVersion = '1.8'
+    }
+    authentication = {
+        type = 'azurecli'
     }
     deployment = {
         type = 'war'

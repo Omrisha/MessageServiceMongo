@@ -37,9 +37,6 @@ azureWebApp {
         javaWebContainer = 'tomcat 8.5'
         javaVersion = '1.8'
     }
-    authentication = {
-        type = 'azurecli'
-    }
     deployment = {
         type = 'war'
     }

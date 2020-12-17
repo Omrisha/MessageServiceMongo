@@ -36,7 +36,7 @@ azureWebApp {
     region = 'Australia Central'
     appService = {
         type = 'linux'
-        javaWebContainer = 'tomcat 8.5'
+        runtimeStack = 'TOMCAT 9.0-jre8'
         javaVersion = '1.8'
     }
     authentication = {

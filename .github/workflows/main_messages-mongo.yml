@@ -29,4 +29,4 @@ jobs:
         app-name: 'messages-mongo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_ad081d2d18f040418f0cc380fb5d5364 }}
-        package: '${{ github.workspace }}/target/*.war'
+        package: '${{ github.workspace }}/build/libs/*.war'

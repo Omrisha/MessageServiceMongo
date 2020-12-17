@@ -35,7 +35,7 @@ azureWebApp {
     pricingTier = 'F1'
     region = 'Australia Central'
     appService = {
-        type = 'web app'
+        type = 'linux'
         javaWebContainer = 'tomcat 8.5'
         javaVersion = '1.8'
     }

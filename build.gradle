@@ -45,5 +45,6 @@ azureWebApp {
     }
     deployment = {
         type = 'war'
+	warFile = 'build/libs/MessageServiceMongo-0.0.1-SNAPSHOT.war'
     }
 }

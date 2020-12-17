@@ -29,6 +29,10 @@ test {
 	useJUnitPlatform()
 }
 
+war {
+    enabled = true
+}
+
 azureWebApp {
     resourceGroup = 'omris'
     appName = 'messages-mongo'

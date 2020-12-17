@@ -45,6 +45,6 @@ azureWebApp {
     }
     deployment = {
         type = 'war'
-	contextType = 'messages-mongo'
+	contextPath = 'messages-mongo'
     }
 }

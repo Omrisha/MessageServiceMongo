@@ -41,6 +41,7 @@ azureWebApp {
     }
     authentication = {
         type = 'azurecli'
+        authFile = 'my.azureauth'
     }
     deployment = {
         type = 'war'

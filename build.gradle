@@ -32,7 +32,7 @@ test {
 azureWebApp {
     resourceGroup = 'omris'
     appName = 'messages-mongo'
-    pricingTier = 'Free'
+    pricingTier = 'F1'
     region = 'Australia Central'
     appService = {
         type = 'windows'

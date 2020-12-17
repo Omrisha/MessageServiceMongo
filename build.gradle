@@ -40,8 +40,8 @@ azureWebApp {
         javaVersion = '1.8'
     }
     authentication = {
-        type = 'azurecli'
-        authFile = 'my.azureauth'
+        type = 'file'
+        file = 'my.azureauth'
     }
     deployment = {
         type = 'war'

@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '2.4.0'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
-	id 'war'
 	id 'lenala.azure.azurewebapp' version '1.0.1'
 }
 
@@ -29,7 +28,7 @@ test {
 	useJUnitPlatform()
 }
 
-war {
+jar {
     enabled = true
 }
 
@@ -48,6 +47,6 @@ azureWebApp {
         file = 'my.azureauth'
     }
     deployment = {
-        type = 'war'
+        type = 'jar'
     }
 }
